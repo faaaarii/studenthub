@@ -16,4 +16,4 @@
 **Optional:** In VS Code, install the **Live Server** extension, right-click `studentlist.html`, and choose **Open with Live Server**.
 
 ## Notes
-- - **Phone view:** in Chrome, press `F12`, then `Ctrl + Shift + M`.
+- **Phone view:** in Chrome, press `F12`, then `Ctrl + Shift + M`.
