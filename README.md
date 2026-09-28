@@ -10,7 +10,7 @@
    ```
    git clone <repository-link>
    ```
-2. Open the `student-hub` folder.
+2. Open the `studenthub` folder.
 3. Double-click `studentlist.html` to open it in your web browser.
 
 **Optional:** In VS Code, install the **Live Server** extension, right-click `studentlist.html`, and choose **Open with Live Server**.
