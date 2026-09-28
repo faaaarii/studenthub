@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap">
+
+    <link rel="stylesheet" href="studentlist.css">
+</head>
+<body>
+    <main class="page">
+
+        <header class="header">
+            <h1>StudentHub</h1>
+        </header>
+        <section class="card">
+            <h2>Filters &amp; Actions</h2>
+            <div class="controls">
+                <input type="text" id="searchinput" placeholder="Search by student name...">
+
+                <select id="course">
+                    <option>All Courses</option>
+                    <option>Computer Science</option>
+                    <option>Information Technology</option>
+                    <option>Software Engineering</option>
+                </select>
+
+                <button id="openform" class="btn-primary">+ Add Student</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Age</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTbody"></tbody>
+            </table>
+            <p class="table-footer" id="countText"></p>
+        </section>
+    </main>
+
+
+    <div class="modal-overlay" id="formmodal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h2>Add Student</h2>
+                <button type="button" class="close-btn" id="closeform">&times;</button>
+            </div>
+
+            <form id="studentform" novalidate>
+                <label for="nameinput">Name</label>
+                <input type="text" id="nameinput" placeholder="e.g. Zara">
+
+                <label for="courseinput">Course</label>
+                <select id="courseinput">
+                    <option>Select course</option>
+                    <option>Computer Science</option>
+                    <option>Information Technology</option>
+                    <option>Software Engineering</option>
+                </select>
+
+                <label for="ageinput">Age</label>
+                <input type="number" id="ageinput" placeholder="e.g. 21">
+
+                <p class="error" id="formerror"></p>
+
+                <div class="modal-actions">
+                    <button type="button" class="btn-cancel" id="cancelbtn">Cancel</button>
+                    <button type="submit" class="btn-primary">Add Student</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="studentlist.js"></script>
+</body>
+</html>
